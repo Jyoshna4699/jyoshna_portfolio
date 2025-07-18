@@ -7,104 +7,118 @@
   <title>Jyoshna Irrigisetti | Data Migration & ETL Developer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <!-- Home Section -->
-  <section class="hero">
-    <div class="container">
-      <div class="hero-text">
-        <h1>Jyoshna Irrigisetti</h1>
-        <h2>Data Migration & ETL Developer</h2>
-        <p>Transforming legacy data into powerful, actionable systems using ETL pipelines and BI tools.</p>
-        <a class="btn" href="Jyoshna_Resume.pdf" download>Download Resume</a>
-      </div>
-      <div class="hero-image">
-        <img src="profile.jpg" alt="Jyoshna Irrigisetti">
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a results-driven Data Migration & ETL Developer with 7 years of experience working on Oracle BRM, SQL, Informatica, Power BI, and Tableau. I hold a Master’s in Management Information Systems from the University of North Texas and have contributed to projects across telecom and healthcare domains.</p>
-      <ul class="skills">
-        <li>Python, SQL, PL/SQL, Bash</li>
-        <li>Informatica PowerCenter, Oracle CMT</li>
-        <li>Power BI, Tableau</li>
-        <li>Linux, UNIX</li>
-        <li>GitHub, Jira, CI/CD</li>
-        <li>AWS (Basic)</li>
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
+    </nav>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Jyoshna Irrigisetti</h1>
+      <p>I'm a <span class="typed" data-typed-items="Data Engineer, ETL Developer, BRM Specialist, BI Analyst"></span></p>
+      <a class="btn btn-primary mt-3" href="Jyoshna_Resume.pdf" download>Download Resume</a>
     </div>
+    <img src="IMG_2364.jpg" alt="Jyoshna" class="profile-pic">
   </section>
 
-  <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container">
-      <h2>What I Do</h2>
-      <div class="services-grid">
-        <div class="card">Data Migration</div>
-        <div class="card">ETL Development (Informatica)</div>
-        <div class="card">SQL Performance Tuning</div>
-        <div class="card">BI Reporting (Power BI, Tableau)</div>
-        <div class="card">Oracle BRM Customization</div>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>About</h2>
+        <p>I'm a Data Migration & ETL Developer with 7 years of experience in telecom and healthcare. Proficient in Oracle BRM, SQL, Informatica, Power BI, and Tableau, I recently earned a Master's in MIS from UNT and specialize in data integration and reporting solutions.</p>
       </div>
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services section-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Services</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="bx bx-data"></i></div>
+          <h4 class="title">ETL Development</h4>
+          <p class="description">Informatica-based pipeline creation, data transformation and integration.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="bx bx-bar-chart-alt"></i></div>
+          <h4 class="title">BI Reporting</h4>
+          <p class="description">Dashboards and insights using Power BI and Tableau.</p>
+        </div>
+        <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="bx bx-code-alt"></i></div>
+          <h4 class="title">SQL/PLSQL Development</h4>
+          <p class="description">Data querying, tuning, and transformation for large-scale systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="portfolio-grid">
-        <div class="project">
-          <h3>Global Air Pollution Analysis</h3>
-          <p>Analyzed 23,000+ air pollution data points using Tableau. Built geospatial dashboards to highlight pollution hotspots and trends.</p>
-          <span class="tags">Tableau, Data Cleaning, Analytics</span>
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+      <div class="row portfolio-container">
+        <div class="col-lg-6 col-md-6 portfolio-item">
+          <h4>Global Air Pollution Analysis</h4>
+          <p>Analyzed 23,000+ pollution records, created interactive dashboards in Tableau identifying pollution hotspots and forecasting trends.</p>
         </div>
-        <div class="project">
-          <h3>Traffic Sign Warning System</h3>
-          <p>Built a CNN-based image classification system using TensorFlow & OpenCV to identify traffic signs with 95% accuracy.</p>
-          <span class="tags">Python, CNN, OpenCV, TensorFlow</span>
+        <div class="col-lg-6 col-md-6 portfolio-item">
+          <h4>Traffic Sign Warning System</h4>
+          <p>Developed a CNN-based model using TensorFlow and OpenCV for traffic sign recognition, achieving 95% accuracy.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="job">
-        <h3>Research Assistant - University of North Texas</h3>
-        <p>Healthcare data migration, SQL queries, Power BI dashboards, and ETL workflows using Informatica.</p>
-        <span>Jan 2024 – May 2025</span>
-      </div>
-      <div class="job">
-        <h3>Senior Software Developer - Covalense Digital</h3>
-        <p>Led data migration and BI dashboarding initiatives for telecom clients using Informatica and Oracle BRM.</p>
-        <span>Jul 2022 – Jul 2023</span>
-      </div>
-      <div class="job">
-        <h3>Software Developer</h3>
-        <p>Optimized Oracle BRM systems, developed reports, and built automated ETL jobs.</p>
-        <span>Aug 2020 – Jun 2022</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
+  <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:jyoshnairrigisetti@gmail.com">jyoshnairrigisetti@gmail.com</a></p>
-      <p>Phone: <a href="tel:+19403046996">+1 940-304-6996</a></p>
-      <p>GitHub: <a href="https://github.com/Jyoshna4699" target="_blank">github.com/Jyoshna4699</a></p>
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="email"><i class="bx bx-envelope"></i><h4>Email:</h4><p>jyoshnairrigisetti@gmail.com</p></div>
+            <div class="phone"><i class="bx bx-phone"></i><h4>Call:</h4><p>+1 940-304-6996</p></div>
+            <div class="github"><i class="bx bxl-github"></i><h4>GitHub:</h4><p><a href="https://github.com/Jyoshna4699">github.com/Jyoshna4699</a></p></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    new Typed('.typed', {
+      strings: document.querySelector('.typed').getAttribute('data-typed-items').split(', '),
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000,
+      loop: true
+    });
+  </script>
 </body>
 
 </html>
